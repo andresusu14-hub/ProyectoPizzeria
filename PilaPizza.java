@@ -8,15 +8,15 @@ public class PilaPizza {
     }
 
     // push() agrega una nueva pizza a la cima de la pila
-    public void push(Pizza pizza) {
-        Nodo nuevo = new Nodo(pizza);
-        nuevo.siguiente = cima;
+    public void push(Pizza pizza){ 
+        Nodo nuevo = new Nodo(pizza); 
+        nuevo.siguiente = cima; 
         cima = nuevo;
     }
 
     // pop() elimina y devuelve la pizza en la cima de la pila. Si la pila está vacía, devuelve null.
     public Pizza pop() {
-
+        // Verifica si la pila está vacía antes de intentar eliminar una pizza
         if (isEmpty()) {
             return null;
         }
